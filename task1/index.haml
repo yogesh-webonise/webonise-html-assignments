@@ -1,0 +1,135 @@
+!!! 5
+%html{:lang=>"en"}
+%head
+  %meta{:charset=>"utf-8"}/
+  %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+  %meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1"}/
+  %meta{:name=>"description", :content=>""}/
+  %meta{:name=>"author", :content=>""}/
+  %title ARTFORTH Discover Art that Moves You
+  / Bootstrap Core CSS
+  %link{:href=>"css/bootstrap.min.css", :rel=>"stylesheet"}/
+  / Custom CSS
+  %link{:href=>"http://fonts.googleapis.com/css?family=Roboto:400,500", :rel=>'stylesheet'}/
+  %link{:href=>"css/styles.css", :rel=>"stylesheet"}/
+  / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+  / WARNING: Respond.js doesn't work if you view the page via file://
+  /
+    [if lt IE 9]
+    %script{:src=>"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"}
+    %script{:src=>"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"}
+    [endif]
+%body
+  / Navigation
+  %header.header#header
+    %nav.navbar.navbar-inverse.navbar-fixed-top{:role=>"navigation"}
+      .container
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %button.navbar-toggle{:type=>"button", "data-toggle"=>"collapse", "data-target"=>"#bs-example-navbar-collapse-1"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand.font-size-28.logo.text-uppercase{:href=>"#"}
+            %strong
+              Art
+              %span.logo-span Forth
+            %span.subtitle.font-size-9.display-block Discover Art that Moves You
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right.top-navbar.font-size-18.text-uppercase
+            %li
+              %a{:href=>"#.", :title=>"Our Valuable Gallery"}
+                %strong The Gallery
+            %li
+              %a{:href=>"#.", :title=>"Our Working Style"}
+                %strong How It Works
+            %li.border-right
+              %a{:href=>"#.", :title=>"Always Present For Help"}
+                %strong Help
+        / .navbar-collapse
+      / .container
+  /
+    Page Content
+    Banner Start
+  %section.banner#banner
+    .container
+      .col-lg-6.col-lg-offset-6
+        %h2.font-size-48
+          Your Moods Change
+        %span.display-block.font-size-36
+          So Should Art On  your walls!
+        %a.font-size-20.color-white.text-uppercase.btn.button-view-gallery{:href=>"#.", :title=>"View Our Precious Gallery"}
+          View Gallery
+        %a.font-size-20.color-white.text-uppercase.btn.button-join-now{:href=>"#", :title=>"Welcome to Our Community"}
+          Join Now
+  /
+    Banner Ends
+    How it works starts
+  %section#how_it_works.how_it_works.text-center
+    .container
+      / Related Projects Row
+      .row
+        .col-lg-12.padding-bottom-50
+          %h2 How It Works
+        .col-lg-10.col-lg-offset-1
+          .col-lg-3
+            %span.display-block
+              %i.glyphicon.glyphicon-pencil.icon.padding-40.font-size-43.margin-bottom-20
+            %span.font-size-18 Add art to your queue online
+          .col-lg-3
+            %span.display-block
+              %i.glyphicon.glyphicon-pencil.icon.padding-40.font-size-43.margin-bottom-20
+            %span.font-size-18 Receive art at your home in the order you specify
+          .col-lg-3
+            %span.display-block
+              %i.glyphicon.glyphicon-pencil.icon.padding-40.font-size-43.margin-bottom-20
+            %span.font-size-18 Keep the art for as long as you like. Buy only what you love
+          .col-lg-3
+            %span.display-block
+              %i.glyphicon.glyphicon-pencil.icon.padding-40.font-size-43.margin-bottom-20
+            %span.font-size-18 Return the art to receive the next piece in your queue
+      / /.row
+  /
+    How it works Ends
+    Footer
+  %footer.footer#footer
+    .container
+      .row
+        .col-lg-6.color-white
+          %ul.nav.navbar-nav.padding-nav.text-uppercase
+            %li
+              %strong Home
+            %li
+              %strong The Gallery
+            %li
+              %strong How it works
+            %li
+              %strong Help
+        .col-lg-6.text-right.color-white
+          %span
+            %i.glyphicon.glyphicon-pencil.icon.padding-7
+          %span
+            %i.glyphicon.glyphicon-pencil.icon.padding-7
+          %span
+            %i.glyphicon.glyphicon-pencil.icon.padding-7
+          %span
+            %i.glyphicon.glyphicon-pencil.icon.padding-7
+        .col-lg-4
+          %p
+            %strong &copy; 2013 Art Forth All Rights Reserved
+        .col-lg-4.text-center
+          %ul.nav.navbar-nav.border-right-nav.padding-nav
+            %li
+              %strong Terms of service
+            %li
+              %strong Privacy Policy
+            %li.no-border
+              %strong Site map
+        .col-lg-4
+    / .row
+  / .container jQuery
+  %script{:src=>"js/jquery.js"}
+  /  Bootstrap Core JavaScript
+  %script{:src=>"js/bootstrap.min.js"}

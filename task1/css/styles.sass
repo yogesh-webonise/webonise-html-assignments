@@ -1,0 +1,100 @@
+@import reset
+
+$white:#fff
+$dark-orange:#ff9900
+$size:14px
+$size-10:10px
+$size-30:3*$size-10
+$size-40:4*$size-10
+
+$borderWidth : 1px
+$borderStyle : solid
+$borderColor : #333
+
+=borderProperty($borderWidth,$borderStyle,$borderColor)
+	$border: $borderWidth $borderStyle $borderColor
+=font-size($size)
+	font-size:$size
+.color-white
+	color:$white !important
+.logo
+	@extend color-white
+	padding:8px
+.icon
+	background:$dark-orange
+	@extend color-white
+	border-radius:50%
+.font-size-14
+	+font-size(14px)
+.font-size-43
+	+font-size(43px)
+.font-size-16
+	+font-size(16px)
+.font-size-36
+	+font-size(36px)
+.font-size-48
+	+font-size(48px)
+.font-size-20
+	+font-size(20px)
+.font-size-18
+	+font-size(18px)
+.font-size-28
+	+font-size(28px)
+.font-size-9
+	+font-size(9px)
+.no-border
+  border:none
+.no-padding
+  padding:0
+.padding-40
+	padding:$size-40
+.padding-7
+	padding:7px
+.padding-top-40
+  padding-top:$size-40
+.padding-bottom-50
+  padding-bottom:$size-10*5
+.button-view-gallery
+	background:#07add1
+.btn
+	margin-top:48px
+.button-join-now
+	background:$dark-orange
+	margin-left:22px
+.margin-bottom-20
+	margin-bottom:$size-10*2
+.banner
+	margin-top:$size-30
+  padding:$size-10*13 0 $size-10*16 0
+	background:url('../images/banner.jpg') no-repeat
+	background-size:cover
+.logo .logo-span
+	color:#ff8000
+.footer,.navbar
+  color:#aaa
+	background:#444
+.top-navbar > li
+	border-left:+borderProperty
+	padding:0 13px
+.bottom-padding
+	padding-bottom:$size-10
+a
+  text-decoration: none !important
+section
+  padding:$size-30*2 0
+footer
+	padding:$size-30 0 57px 0
+.border-right-nav 
+	li
+		border-right:$border
+.padding-na 
+	li
+		padding:0 $size-10
+.border-right
+  border-right:+borderProperty
+.display-block
+	display:block
+.no-border
+  border:none !important
+.text-uppercase
+  text-transform: uppercase
